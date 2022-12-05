@@ -1,7 +1,7 @@
 let {MongoClient} = require('mongodb');
 
 async function main(){
-    let client = new MongoClient("mongodb+srv://demo:nBB1BOLMXqMSExkG@cluster0.so1ntwj.mongodb.net/?retryWrites=true&w=majority");
+    let client = new MongoClient("mongodb+srv://<username>:<password>@cluster0.so1ntwj.mongodb.net/?retryWrites=true&w=majority");
     try{
         await client.connect();
         await listDatabases(client);
